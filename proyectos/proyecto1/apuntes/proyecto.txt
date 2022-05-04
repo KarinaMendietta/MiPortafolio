@@ -1,0 +1,28 @@
+
+settings.py >INSTALLED APP > Aqui Podriamos completar con las areas de la universidad.
+el area contable, tesoreria, rrhh, academica, etc.
+En este proyecto nos enfocaremos enla parte academica. 4 entidades a reflejar:
+registro de carreras,estudiante,cursos y la matricula correspondiente que amarra
+a un estudiante con un curso.
+
+settings > TEMPLATES > la ruta en la que van a estar las plantillas 
+
+Patron de Arquitectura Modelo MTV Model Template View
+el usuario hace una peticion a traves de una URL hacia una vista.
+La vista se conecta con el modelo y este con la base de datos para insertar, 
+actualizar, eliminar o leer datos (CRUD).
+El modelo devuelve una respuesta a la vista y la vista decide finalmente que 
+plantilla o template se va a mostrar finalmente al usuario en su navegador web.
+Esta plantilla es un documento HTML que tambien puede contener codigo CSS o JS 
+
+settings > DATABASES > django tiene soporte nativo, es decir por defecto para
+bases de datos SQLite y PostgreeSQL . En este proyecto usaremos SQLite 
+Cambiar a :
+'NAME': 'MiUniversidad.db',
+
+settings > # Internationalization
+LANGUAGE_CODE = 'es-pe'
+
+TIME_ZONE = 'America/Lima'
+
+USE_TZ = False    usar zona horaria time zone

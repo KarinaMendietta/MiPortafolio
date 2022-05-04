@@ -1,0 +1,47 @@
+Proyecto Django Para Administrar Universidad | Aplicación Web con Base de Datos y Envío de Correos
+https://www.youtube.com/watch?v=10_PpcLRaHk
+
+1. Creo entorno virtual
+python -m venv venv
+source venv/Scripts/activate
+pip freeze (no tengo aun ninguna libreria)
+pip install django
+pip freeze   y veo Django==4.0.4
+
+2. Creo proyecto en django
+django-admin startproject MiUniversidad, y me crea la carpeta MiUniversidad
+Y adentro la arpeta MiUniversidad y archivo manage.py.
+manage.py : el mas importante permite trabajar dentro del proyecto, crear la 
+base de datos, crear un usuario para que acceda y realizar las migraciones.
+ Tambien permite crear un servidor pequeño para desplegar el proyecto
+carpeta MiUniversidad : 5 archivos 
+__init__ archivo tratado como un paquete de datos
+asgi 
+settings configurar parametros importantes del proyecto, como lenguaje,zona
+ horaria, incluso motor de base de datos a usar 
+urls especie de diccionario que permite indicar el indice del proyecto, permite
+identificar bajo que ruta podemos acceder a un formulario de contacto por ejemplo
+wsgi
+
+Ejecutar el proyecto
+Primero entra a la carpeta MiUniversidad con cd 
+python manage.py runserver y entra al servidor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
