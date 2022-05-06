@@ -1,6 +1,6 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 
-from.models import Receta
+from.models import Autor,Receta,Comentario
 
 
 # Create your views here.
@@ -8,7 +8,10 @@ from.models import Receta
 
 def index(request):
     listaRecetas = Receta.objects.all()
+    context = {
+        'recetas':listaRecetas
+    }
     print(listaRecetas)
     
-    return render(request,'index.html')
+    return render(request,'index.html',context)
 
